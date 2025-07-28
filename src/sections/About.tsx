@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion';
-import RollingHills from '../components/RollingHills';
+import './About.scss'
 
-const anqi_height = 200;
+const screenWidth = window.innerWidth;
+const anqi_height = screenWidth >= 768 ? 200 : 150;
 
 const animals = [
   { name: "fatty", size: 0.22 * anqi_height, speed: 3 },
@@ -11,13 +12,10 @@ const animals = [
   { name: "doggle", size: 0.30 * anqi_height, speed: 2 },
 ];
 
-// export default function About({ onReady }) {
 export default function About() {
   return (
-    <section className="h-screen w-screen snap-start flex flex-col items-center justify-center px-10">
-      {/* <RollingHills onReady={onReady} /> */}
-      <RollingHills />
-      <div className="w-2/3 text-center z-1">
+    <section className="w-screen min-h-screen snap-start flex flex-wrap flex-row items-center justify-center" style={{ paddingBottom: '5em' }}>
+      <div className="responsive-box text-left z-1">
         <h2 className="text-3xl font-semibold mb-2 text-[#42190d]">Since you're here, I am guessing you want to know a little bit about me...</h2>
         <p className="text-[#20180f]">
           I grew up in Johannesburg, South Africa. Academically, I hold BAs in Economics and Statistics, 
@@ -55,7 +53,7 @@ export default function About() {
         </p>
       </div>
 
-      <div className="flex justify-start items-end z-1">
+      <div className="flex justify-start items-end self-end z-1">
         <img src="/Anqi_walk2.png" style={{ height: `${anqi_height}px` }} alt="Anqi" />
         {animals.map((animal) => (
           <motion.img

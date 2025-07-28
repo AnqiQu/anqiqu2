@@ -1,17 +1,19 @@
 import { motion } from 'framer-motion';
-import CloudySky from '../components/CloudySky';
+import CloudField from '../components/Cloudfield';
 
-// export default function Landing({ onReady }) {
 export default function Landing() {
   
   return (
-    <section className="h-screen w-screen snap-start flex items-center justify-center">
-      {/* <CloudySky onReady={onReady} /> */}
-      <CloudySky />
+    <section className="relative h-screen w-screen snap-start flex items-center justify-center overflow-hidden">
+      {/* Background cloud layer */}
+      <div className="absolute top-0 left-0 w-full h-full z-0 pointer-events-none">
+        <CloudField />
+      </div>
 
-      <div className="flex flex-row items-center">
+      {/* Foreground content */}
+      <div className="flex flex-wrap flex-row items-center justify-center p-4 z-10">
         <motion.h1
-          className="text-5xl font-bold inline text-[#372c1c] z-1"
+          className="text-4xl md:text-5xl text-center font-bold inline text-[#372c1c]"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
