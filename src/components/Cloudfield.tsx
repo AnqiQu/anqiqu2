@@ -1,5 +1,5 @@
 import { useMemo, type ReactElement } from 'react';
-import styles from './CloudField.module.scss';
+import styles from './Cloudfield.module.scss';
 
 const NUM_CLOUDS = 8;
 const NUM_SMCLOUDS = 11;
