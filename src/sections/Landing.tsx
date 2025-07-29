@@ -22,7 +22,7 @@ export default function Landing() {
         </motion.h1>
 
         <motion.img
-          src="/Anqi_head.png"
+          src="/images/Anqi_head.png"
           alt="Anqi"
           style={{ height: "250px", marginLeft: "40px" }}
           initial={{ opacity: 0, y: 0 }}

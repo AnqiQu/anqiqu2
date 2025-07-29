@@ -30,7 +30,7 @@ export default function CloudField() {
       elements.push(
         <img
           key={`cloud-${i}`}
-          src={`/cloud${i}.png`}
+          src={`/images/cloud${i}.png`}
           className={`${styles.cloudFloat} absolute`}
           style={style}
           alt={`cloud-${i}`}
@@ -43,7 +43,7 @@ export default function CloudField() {
       elements.push(
         <img
           key={`smcloud-${i}`}
-          src={`/smcloud${i}.png`}
+          src={`/images/smcloud${i}.png`}
           className={`${styles.cloudFloat} absolute`}
           style={style}
           alt={`smcloud-${i}`}

@@ -54,11 +54,11 @@ export default function About() {
       </div>
 
       <div className="flex justify-start items-end self-end z-1">
-        <img src="/Anqi_walk2.png" style={{ height: `${anqi_height}px` }} alt="Anqi" />
+        <img src="/images/Anqi_walk2.png" style={{ height: `${anqi_height}px` }} alt="Anqi" />
         {animals.map((animal) => (
           <motion.img
             key={animal.name}
-            src={`/${animal.name}.png`}
+            src={`/images/${animal.name}.png`}
             alt={animal.name}
             animate={{ y: [0, -5, 0] }}
             style={{ height: `${animal.size}px` }}
