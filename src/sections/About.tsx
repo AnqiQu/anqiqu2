@@ -60,15 +60,6 @@ export default function About() {
           >
             anqiqu
           </a>
-          <br /> GitHub (my most interesting repos are all private so reach out for more information):{" "}
-          <a
-            href="https://github.com/AnqiQu"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-500 hover:underline"
-          >
-            AnqiQu
-          </a>
           <br /> Instagram:{" "}
           <a
             href="https://www.instagram.com/anqi._.thewateraddict/"
@@ -78,10 +69,11 @@ export default function About() {
           >
             @anqi._.thewateraddict
           </a>
-
-          <br /> 
-
-          <br />Read my{" "}
+          <br />
+          I'm also on GitHub, but my most interesting repos are all private so
+          reach out for more information
+          <br />
+          Read my{" "}
           <a
             href="https://open-crush-92c.notion.site/Anqo-Optimisto-Manifesto-324b14bb43ea805c9b5ed390507e8bd3?source=copy_link"
             target="_blank"
@@ -90,6 +82,7 @@ export default function About() {
           >
             Anqo-Optimisto Manifesto
           </a>
+          {":)"}
         </p>
       </div>
 
