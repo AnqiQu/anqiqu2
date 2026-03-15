@@ -73,6 +73,7 @@ export default function About() {
           I'm also on GitHub, but my most interesting repos are all private so
           reach out for more information
           <br />
+          <br />
           Read my{" "}
           <a
             href="https://open-crush-92c.notion.site/Anqo-Optimisto-Manifesto-324b14bb43ea805c9b5ed390507e8bd3?source=copy_link"
@@ -82,7 +83,7 @@ export default function About() {
           >
             Anqo-Optimisto Manifesto
           </a>
-          {":)"}
+          {" :)"}
         </p>
       </div>
 
